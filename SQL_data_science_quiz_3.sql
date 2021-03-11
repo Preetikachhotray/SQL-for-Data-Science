@@ -16,7 +16,7 @@ SELECT FirstName,
        LastName,
        City,
        Email,
-       COUNT(I.CustomerId) AS Invoices
+       COUNT(I.InvoiceId) AS Invoices
 FROM Customers C INNER JOIN Invoices I
 ON C.CustomerId = I.CustomerId
 GROUP BY C.CustomerId
